@@ -1,0 +1,2205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Diamond Catering</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/cssfonts-min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/masked.input.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.nicefileinput.min.js.js"></script> -->
+<script type="text/javascript" src="js/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.swfobject.js"></script>
+<script type="text/javascript" src="js/youTubeEmbed-jquery.js"></script>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+<!-- <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script> -->
+<script type="text/javascript" src="js/scripts.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="js/selectivizr-min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div class="top-wrap">
+
+  <div class="top-main">
+    
+    <div class="header">
+    
+      <div class="header-top">
+      
+        <div class="center-wrapper">
+          <div class="header-l">
+            <div class="header-site-name">
+              Событийный<br />кейтеринг в Москве
+            </div>
+            <div class="header-site-slogan">
+              Европейские технологии и<br />
+              тактичный персонал
+            </div>
+          </div>
+          <div class="header-m">
+            <div class="header-logo">
+              <a href="#"><img src="images/logo.png" alt="Diamond Catering"/></a>
+            </div>
+          </div>
+          <div class="header-r">
+            <div class="header-email">
+            	<a href="mailto:sales@dcatering.ru">sales@dcatering.ru</a>
+            </div>
+            <div class="header-phone">
+              +7 (495) 785-02-09
+            </div>
+            <div class="button" onclick="openPopup('orderPopup')">
+              Закажите кейтеринг сейчас
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="main-menu-wrapper">
+        <div class="center-wrapper">
+          <ul class="main-menu">
+            <li>
+            	<a href="#">Что мы делаем</a>
+            </li>
+            <li>
+            	<a href="#">О нас</a>
+            </li>
+            <li>
+            	<a href="#">Меню</a>
+            </li>
+            <li>
+            	<a href="#">Клиенты и кейсы</a>
+            </li>
+            <li>
+            	<a href="#">Площадки</a>
+            </li>
+            <li>
+            	<a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+    
+    <div class="body body-main">
+    
+      <div class="content">
+      
+        
+        <div class="main-slider-wrapper">
+        	<div class="center-wrapper">
+        	  <div class="main-slider">
+              
+              <div class="cases-button">Смотреть кейсы</div>
+            
+              <div class="slider-prev" style="display:none;"></div>
+              <div class="slider-next" style="display:none;"></div>
+            
+        	    <div class="slides">
+        	      
+                <div class="slide slide-video">
+                  <div class="pic"><img src="images/mp-video-bg.jpg" alt=""/></div>
+                  <div class="descr">
+                    <h2>узнайте о нас<br />за <span>2</span> минуты</h2>
+                    <div class="text">
+                      <p>« Для нас кейтеринг это не просто еда на мероприятии, нам действительно интересно делать яркие и вкусные события.</p>
+                      <p>Хороший вкус, стиль и внимание к деталям — секреты нашего успеха уже 8 лет. »</p>
+                    </div>
+                    <div class="resp">
+                      С уважением,
+                    </div>
+                    <div class="subscr">
+                      Андрей Горожанкин,<br />Дмитрий Пухов
+                    </div>
+                  </div>
+                  <div class="video-cont" id="mpcVideo"></div>
+                  <script type="text/javascript" src="js/jquery.swfobject.js"></script>
+                  <script type="text/javascript" src="js/youTubeEmbed-jquery.js"></script>
+                  <script type="text/javascript">
+                    $('#mpcVideo').youTubeEmbed({
+                      video			: 'http://www.youtube.com/watch?v=MplVMNyi_1k',
+                      width			: 647,
+                      height			: 365,
+                      progressBar	: false
+                    });
+                  </script>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-1.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-hc-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-2.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-vtb-mc.png"/>
+                    </div>
+                    <h2>Новогодний фуршет на 3000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-3.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-av-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-1.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-hc-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-2.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-vtb-mc.png"/>
+                    </div>
+                    <h2>Новогодний фуршет на 3000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-3.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-av-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-1.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-hc-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-2.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-vtb-mc.png"/>
+                    </div>
+                    <h2>Новогодний фуршет на 3000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="pic"><img src="files/main-slide-3.jpg" alt=""/></div>
+                  <div class="descr">
+                    <div class="logo">
+                      <img src="files/logo-av-mc.png"/>
+                    </div>
+                    <h2>шикарный банкет на 1000 гостей</h2>
+                    <div class="text">
+                      <p>Изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                    </div>
+                    <div class="person">
+                      <div class="pic">
+                        <img src="files/userpic.jpg">
+                      </div>
+                      <div class="descr">
+                        <div class="cont">
+                          Царегородцева Анастасия
+                          <div class="pos">
+                            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+        	    </div>
+        	    
+        	    <div class="main-slider-carousel">
+        	      <ul class="jcarousel">
+        	        <li class="video-link">
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <span class="ico-video"></span>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Видео
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-hc-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-vtb-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Новогодний фуршет<br />на 3000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-av-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-hc-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-vtb-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Новогодний фуршет<br />на 3000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-av-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-hc-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-vtb-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Новогодний фуршет<br />на 3000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	        <li>
+        	          <div class="item-cont">
+        	          	<div class="pic">
+        	          	  <img src="files/logo-av-s.png"/>
+        	          	</div>
+        	          	<div class="descr">
+        	          	  Шикарный банкет<br />на 1000 гостей
+        	          	</div>
+        	          </div>
+        	        </li>
+        	      </ul>
+        	    </div>
+        	    
+        	  </div>
+        	</div>
+        </div>
+          
+        <div class="center-wrapper">
+          <div class="main-title">
+            <h2>
+              Что такое<br />
+              <span>безупречный кейтеринг</span>
+            </h2>
+          </div>
+          <div class="main-what">
+        	  <div class="text text-1">
+              <h3>Актуальные площадки</h3>
+              <p>Опыту наших европейских коллег,<br />новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+            <div class="text text-2">
+              <h3>Понятная смета</h3>
+              <p>Новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+            <div class="text text-3">
+              <h3>без пробкового сбора</h3>
+              <p>Опыту наших европейских коллег,<br />новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+            <div class="text text-4">
+              <h3>Оригинальное меню</h3>
+              <p>Опыту наших европейских коллег,<br />новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+            <div class="text text-5">
+              <h3>Дегустация меню</h3>
+              <p>Опыту наших европейских коллег,<br />новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+            <div class="text text-6">
+              <h3>Схема площадки</h3>
+              <p>Опыту наших европейских коллег,<br />новейшим тенденциям<br />и последним трендам.</p>
+            </div>
+        	</div>
+          
+          <div class="main-order">
+            <div class="common-form order-form order-short-form">
+              <div class="form-cont">
+                <div class="ttl">
+                  <span>Заказать услугу</span><br />
+                  &laquo;Безупречный кейтеринг&raquo;
+                </div>
+                <form action="." id="orderShortForm">
+                  
+                  <div class="form-row fc">
+                    <div class="form-item fi-2-3 errors-left">
+                      <label class="placeholder" for="order_short_name">Ваше имя</label>
+                      <input type="text" class="form-text" name="order_short_name" id="order_short_name" required />
+                    </div>
+                    <div class="form-item fi-1-3">
+                      <label class="placeholder" for="order_short_phone">Телефон</label>
+                      <input type="text" class="form-text form-phone" name="order_short_phone" id="order_short_phone" required />
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <label class="placeholder" for="order_short_message">Ваши пожелания и комментарии</label>
+                    <textarea name="order_short_message" id="order_short_message" rows="3" class="form-textarea" required ></textarea>
+                  </div>
+                  <div class="form-footer fc">
+                    <input type="submit" class="form-submit button" value="Отправить заявку" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="main-achievements">
+          <div class="center-wrapper">
+        	  <h2>Наши достижения</h2>
+        	  
+        	  <div class="achievements-gallery main-achievements-gallery">
+        	    <h3>Наши награды</h3>
+        	    <ul class="jcarousel main-achievements-carousel">
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Самое эффективное продвижение собственных услуг
+        	        </div>
+        	      </li>
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Лучший кейтеринг 2013
+        	        </div>
+        	      </li>
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Самое эффективное продвижение собственных услуг
+        	        </div>
+        	      </li>
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Самое эффективное продвижение собственных услуг
+        	        </div>
+        	      </li>
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Лучший кейтеринг 2013
+        	        </div>
+        	      </li>
+        	      <li>
+        	        <div class="pic">
+        	          <a href="files/achievements-1.jpg" class="fancybox" rel="achievements-gallery">
+        	            <img src="files/achievements-1-tmb.jpg" alt=""/>
+        	            <span class="pic-mask"></span>
+        	          </a>
+        	        </div>
+        	        <div class="descr">
+        	          Диплом<br />Самое эффективное продвижение собственных услуг
+        	        </div>
+        	      </li>
+        	    </ul>
+        	  </div>
+        	  
+        	  <div class="ach-leaders">
+        	    <div class="name name-1">
+        	      Дмитрий&nbsp;Пухов<br />
+        	      <span>генеральный&nbsp;директор</span>
+        	    </div>
+        	    <div class="name name-2">
+        	      Андрей&nbsp;Горожанкин<br />
+        	      <span>управляющий&nbsp;партнер</span>
+        	    </div>
+        	  </div>
+        	  
+        	  <div class="ach-membership">
+        	    <h3>Членство в международных ассоциациях</h3>
+        	    <div class="text">
+        	      <p>Компания Даймонд Кейтеринг в марте 2013 года вступила в ряды European Party Catering Assosiation — ассоциацию, объединяющую крупнейших игроков на европейском рынке событийного кейтеринга.</p>
+        	      <p>Это «окно в европу» позволило получить доступ к огромному опыту наших европейских коллег, новейшим тенденциям и последним трендам.</p>
+        	    </div>
+        	    <div class="logos fc">
+        	      <a href="#"><img src="files/logo-ica-s.png"/></a>
+        	      <a href="#"><img src="files/logo-epcas-s.png"/></a>
+        	    </div>
+        	  </div>
+        	  
+        	</div>
+        </div>
+        
+        <div class="main-subscribe">
+          <div class="center-wrapper">
+            <div class="common-form alt-form subscribe-form order-form fc">
+              <form action="." id="subscribeForm">
+                <div class="form-ttl">
+                  <span class="ttl-1">Узнайте</span>
+                  <span class="ttl-2">10</span><span class="ttl-3">секретов</span><br />
+                  <span class="ttl-4">безупречного мероприятия</span>
+                </div>
+                <div class="form-item errors-left">
+                  <label class="placeholder" for="subscribe_name">Ваше имя</label>
+                  <input type="text" class="form-text" name="subscribe_name" id="subscribe_name" required />
+                </div>
+                <div class="form-item">
+                  <label class="placeholder" for="subscribe_email">Эл. почта</label>
+                  <input type="text" class="form-text form-email" name="subscribe_email" id="subscribe_email" required />
+                </div>
+                <input type="submit" class="form-submit button button-2" value="Подписаться" />
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="main-business">
+        
+        
+          <div class="center-wrapper">
+          	<div class="main-title">
+          	  <h2>
+          	    Кейтеринг, как<br />
+          	    <span>решение бизнес-задач</span>
+          	  </h2>
+          	</div>
+            
+            <div class="tabbed-content business-tabs tabs-hidden tabs-triggered">
+              <div class="tabs fc">
+                <div class="tab" rel="business-1">
+                  <div class="cont">
+                    <div class="pt"></div>
+                    <div class="pic">
+                      <img src="files/business-tmb-1.jpg" />
+                      <div class="pic-mask"></div>
+                    </div>
+                    <div class="descr">
+                      <h3>корпоративные задачи</h3>
+                      <ul>
+                        <li>ДР компании</li>
+                        <li>Новый код</li>
+                        <li>Командообразование</li>
+                        <li>Профессиональный праздник</li>
+                      </ul>
+                    </div>
+                    <div class="cases-trigger-cont">
+                      <span class="tabs-trigger cases-trigger">Смотреть кейсы</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab" rel="business-2">
+                  <div class="cont">
+                    <div class="pt"></div>
+                    <div class="pic">
+                      <img src="files/business-tmb-1.jpg" />
+                      <div class="pic-mask"></div>
+                    </div>
+                    <div class="descr">
+                      <h3>Презентационные задачи</h3>
+                      <ul>
+                        <li>Презентация нового продукта</li>
+                        <li>Торжественное открытие</li>
+                        <li>Запуск проекта</li>
+                      </ul>
+                    </div>
+                    <div class="cases-trigger-cont">
+                      <span class="tabs-trigger cases-trigger">Смотреть кейсы</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab" rel="business-3">
+                  <div class="cont">
+                    <div class="pt"></div>
+                    <div class="pic">
+                      <img src="files/business-tmb-1.jpg" />
+                      <div class="pic-mask"></div>
+                    </div>
+                    <div class="descr">
+                      <h3>Обущающие задачи</h3>
+                      <ul>
+                        <li>Тренинги</li>
+                        <li>Семинары</li>
+                        <li>Форумы</li>
+                        <li>Конференции</li>
+                      </ul>
+                    </div>
+                    <div class="cases-trigger-cont">
+                      <span class="tabs-trigger cases-trigger">Смотреть кейсы</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tabs-content">
+                <div class="tab-content" rel="business-1">
+                  <div class="cont">
+                    <div class="close"></div>
+                    <div class="cases-slider common-slider">
+                      <div class="slides">
+                      	<div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Шикарный банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Шикарный банкет на 2000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content" rel="business-2">
+                  <div class="cont">
+                    <div class="close"></div>
+                    <div class="cases-slider common-slider">
+                      <div class="slides">
+                      	<div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">2 Шикарный банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Шикарный банкет на 2000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content" rel="business-3">
+                  <div class="cont">
+                    <div class="close"></div>
+                    <div class="cases-slider common-slider">
+                      <div class="slides">
+                      	<div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">3 Шикарный банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Шикарный банкет на 2000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                        <div class="slide">
+                      		<div class="cases-item-alt fc">
+                      		  <div class="pic">
+                      		    <a href="#"><img src="files/case-tmb-1.jpg"/></a>
+                      		  </div>
+                      		  <div class="descr">
+                      		    <div class="logo">
+                      		      <a href="#"><img src="files/logo-tinkoff.png"/></a>
+                      		    </div>
+                      		    <h3><a href="#">Банкет на 1000 гостей</a></h3>
+                      		    <div class="text">
+                      		      <p>Фуршет от «Даймонд кейтеринг» — это изысканные закуски, безупречное оформление помещения, приятная обстановка и качественное обслуживание!</p>
+                      		    </div>
+                      		    <div class="person">
+                      		      <div class="pic">
+                      		        <img src="files/userpic.jpg">
+                      		      </div>
+                      		      <div class="descr">
+                      		        <div class="cont">
+                      		          Царегородцева Анастасия
+                      		          <div class="pos">
+                      		            Эксперт Отдела внутренних коммуникаций Porsche Russia
+                      		          </div>
+                      		        </div>
+                      		      </div>
+                      		    </div>
+                              <div class="more">
+                                <a href="#">Подробнее</a>
+                              </div>
+                      		  </div>
+                      		</div>
+                      	</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          
+          
+        </div>
+      
+        <div class="main-numbers">
+          <div class="center-wrapper">
+            <div class="numbers-cont">
+            	<div class="fork"></div>
+            	<div class="spoon-knife"></div>
+              
+              <h2>Diamond Catering в цифрах</h2>
+              
+              <div class="mn-ttl fc">
+                <div class="mn-ttl-l">
+                  Diamond Catering<br />
+                  <span>Команда профессионалов</span>
+                </div>
+                <div class="mn-ttl-m">
+                  <span class="mn-year">2005</span>
+                  <span class="mn-est">основано</span>
+                </div>
+                <div class="mn-ttl-r">
+                  8 лет опыта<br />
+                  <span>оказания кейтеринговых услуг</span>
+                </div>
+              </div>
+              
+              <hr/>
+              
+              <table class="mn-table">
+                <tr>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-1.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">2500</div>
+                      проведенных<br />мероприятий
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-2.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">800 000</div>
+                      гостей обслужено
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-3.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">6 500</div>
+                      гостей в день
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-4.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">6</div>
+                      собственных<br />
+                      эксклюзивных<br />
+                      площадок
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-5.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">50</div>
+                      профессионалов<br />в штате
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pic">
+                      <img src="files/main-numbers-6.png"/>
+                    </div>
+                    <div class="descr">
+                      <div class="num">1300 <span>м&sup2;</span></div>
+                      современного<br />
+                      технологичного<br />
+                      производства
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="main-team">
+          <div class="center-wrapper">
+            <div class="main-title">
+            	<h2>
+            	  Команда<br />
+            	  <span>Diamond Catering</span>
+            	</h2>
+            </div>
+            
+            <div class="main-team-carousel fc">
+              <ul class="jcarousel">
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Дмитрий Пухов </div>
+                    <div class="state">генеральный директор</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Масштаб компании определяется мастшабом сотрудников, работающих в ней</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Андрей Горожанкин</div>
+                    <div class="state">управляющий партнер</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Wow-эффект на мероприятии одна 	из основ нашего бизнеса</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Андрей Сокуренко</div>
+                    <div class="state">коммерческий директор</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Счастлив не тот, кто получает подарок, а тот, кто подарок делает</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Павел Абрамкин</div>
+                    <div class="state">руководитель банкетного отдела</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Важен не размер мероприятия. Важен системный подход в организации</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Дмитрий Пухов </div>
+                    <div class="state">генеральный директор</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Масштаб компании определяется мастшабом сотрудников, работающих в ней</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Андрей Горожанкин</div>
+                    <div class="state">управляющий партнер</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Wow-эффект на мероприятии одна 	из основ нашего бизнеса</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Андрей Сокуренко</div>
+                    <div class="state">коммерческий директор</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Счастлив не тот, кто получает подарок, а тот, кто подарок делает</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+                <li>
+                  <div class="pic">
+                    <img src="files/userpic-big.jpg"/>
+                    <div class="pic-mask"></div>
+                  </div>
+                  <div class="descr">
+                    <div class="name">Всеволод Ермаков</div>
+                    <div class="state">брэнд-шеф</div>
+                    <blockquote>
+                      <div class="bq-content">
+                        <div class="cont">
+                          <p>Я считаю, что кухня это 80% успеха мероприятия</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      
+        <div class="main-places">
+          <div class="center-wrapper">
+            <div class="main-title">
+            	<h2>
+            	  <span>Наши площадки</span>
+            	</h2>
+            </div>
+            
+            <div class="mp-ttl fc">
+              <div class="mp-ttl-l">
+                <span class="num">6</span>
+                <span>собственных<br />эксклюзивных площадок</span>
+              </div>
+              <div class="mp-ttl-m">
+                <span class="num">200</span>
+                <span class="mp-base">площадок в базе</span>
+              </div>
+              <div class="mp-ttl-r">
+                <span class="num">4</span>
+                <span>вида площадок<br />под разные цели</span>
+              </div>
+              
+            </div>
+            
+            <div class="places-slider">
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="slide fc">
+                <div class="pic">
+                  <div class="pic-cont">
+                    <img src="files/places-big-1.jpg" />
+                  </div>
+                  <div class="pic-mask"></div>
+                  <!-- Маленькая картинка -->
+                  <img class="tmb" src="files/places-med-1.jpg" />
+                </div>
+                <div class="descr">
+                  <h2><a href="#">Парк «Горки» на Рублево-Успенском шоссе</a></h2>
+                  <div class="text">
+                    Памятник архитектуры «Палаты Волковых — Юсуповых».
+                  </div>
+                  <table class="capacity">
+                    <tr>
+                      <td class="name">Банкет:</td>
+                      <td>120 гостей</td>
+                    </tr>
+                    <tr>
+                      <td class="name">Фуршет:</td>
+                      <td>300 гостей</td>
+                    </tr>
+                  </table>
+                  
+                  <div class="pic-gallery-tmbs fc">
+                    <a href="files/places-big-1.jpg" class="act"><img src="files/places-tmb-1.jpg" alt=""/></a>
+                    <a href="files/places-big-2.jpg"><img src="files/places-tmb-2.jpg" alt=""/></a>
+                    <a href="files/places-big-3.jpg"><img src="files/places-tmb-3.jpg" alt=""/></a>
+                  </div>
+                  
+                  <div class="more">
+                    <a href="#">Подробнее о площадке</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="mp-link">
+            <div class="button button-big">Подобрать площадку</div>
+            <div class="lead">
+              подберите площадку Для мероприятия прямо сейчас!
+            </div>
+          </div>
+          
+        </div>
+      
+        <div class="main-clients">
+          <div class="main-clients-cont">
+          	<div class="center-wrapper">
+          	  <div class="main-title main-title-alt">
+          	  	<h2>
+          	  	  <span>Клиенты</span>
+          	  	</h2>
+          	  </div>
+          	    
+          	  <ul class="jcarousel main-clients-carousel">
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-tinkoff-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Фуршет на 1000 гостей - Ассамблея CCIFR Club France.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-av-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Банкет на 400 гостей - Юбилей компании.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	     <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-tinkoff-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Фуршет на 1000 гостей - Ассамблея CCIFR Club France.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-av-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Банкет на 400 гостей - Юбилей компании.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	     <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-tinkoff-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Фуршет на 1000 гостей - Ассамблея CCIFR Club France.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-av-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Банкет на 400 гостей - Юбилей компании.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	     <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-tinkoff-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Фуршет на 1000 гостей - Ассамблея CCIFR Club France.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-av-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Банкет на 400 гостей - Юбилей компании.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	     <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-tinkoff-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Фуршет на 1000 гостей - Ассамблея CCIFR Club France.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	    <li>
+          	      <div class="pic">
+          	        <div class="cont"><img src="files/logo-av-2.png"/></div>
+          	      </div>
+          	      <div class="descr">
+          	        <div class="txt">
+          	          <p>Банкет на 400 гостей - Юбилей компании.</p>
+          	        </div>
+          	        <a class="more" href="#">Смотреть кейс</a>
+          	      </div>
+          	    </li>
+          	  </ul>
+          	    
+          	</div>
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="footer footer-main">
+
+  <div class="main-menu-wrapper">
+    <div class="center-wrapper">
+      <ul class="main-menu">
+        <li class="act">
+          <a href="#">Что мы делаем</a>
+        </li>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Меню</a>
+        </li>
+        <li>
+          <a href="#">Клиенты и кейсы</a>
+        </li>
+        <li>
+          <a href="#">Площадки</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-top">
+      
+    <div class="center-wrapper">
+      <div class="footer-l">
+        <div class="footer-site-name">
+          Событийный<br />кейтеринг в Москве
+        </div>
+        <div class="footer-site-slogan">
+          Европейские технологии и<br />
+          тактичный персонал
+        </div>
+      </div>
+      <div class="footer-m">
+        <div class="footer-logo">
+          <a href="#"><img src="images/logo.png" alt="Diamond Catering"/></a>
+        </div>
+        <div class="footer-address">
+          Москва, Красный Октябрь,<br />
+          Болотная набережная, 5 стр. 1
+        </div>
+        <div class="footer-soclinks fc">
+          <a class="ico-instagram" href="#"></a>
+          <a class="ico-fb" href="#"></a>
+        </div>
+      </div>
+      <div class="footer-r">
+        <div class="footer-email">
+          <a href="mailto:sales@dcatering.ru">sales@dcatering.ru</a>
+        </div>
+        <div class="footer-phone">
+          +7 (495) 785-02-09
+        </div>
+        <div class="button" onclick="openPopup('orderPopup')">
+          Закажите кейтеринг сейчас
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="footer-copy">
+    &copy; 2005&ndash;2013. Diamond Catering. Все права защищены. Создание сайта <a href="http://renart.ru">Renaissance AG</a>
+  </div>
+  
+</div>
+
+<!-- Popups -->
+
+<div class="popup order-popup" id="orderPopup">
+  <div class="pup-content-wrapper">
+  	<div class="pup-content">
+  		<div class="close"></div>
+      <div class="ttl">
+        <span>Заказать услугу</span><br />
+        &laquo;Безупречный кейтеринг&raquo;
+      </div>
+      <div class="common-form order-popup-form">
+        <form action="." id="orderPopupForm">
+          <div class="form-item">
+            <label class="placeholder" for="order_name">Ваше имя</label>
+            <input type="text" class="form-text" name="order_name" id="order_name" required />
+          </div>
+          <div class="form-row fc">
+          	<div class="form-item fi-half errors-left">
+          	  <label class="placeholder" for="order_phone">Телефон</label>
+          	  <input type="text" class="form-text form-phone" name="order_phone" id="order_phone" required />
+          	</div>
+          	<div class="form-item fi-half">
+          	  <label class="placeholder" for="order_email">E-mail</label>
+          	  <input type="text" class="form-text form-email" name="order_email" id="order_email" required />
+          	</div>
+          </div>
+          <div class="form-item">
+            <select class="form-select hide-ttl" name="order_type" id="order_type" required >
+              <option value="">Тип мероприятия</option>
+              <option value="1">Новый год</option>
+              <option value="2">День рождения</option>
+              <option value="3">Юбилей огромной корпорации</option>
+            </select>
+          </div>
+          <div class="form-row">
+          	<div class="form-item fi-half errors-left">
+          	  <label class="placeholder" for="order_date">Дата мероприятия</label>
+          	  <input type="text" class="form-text form-date" name="order_date" id="order_date" readonly="readonly" required />
+          	</div>
+          	<div class="form-item fi-half">
+          	  <select class="form-select hide-ttl" name="order_guests" id="order_guests" required >
+          	    <option value="">Количество гостей</option>
+          	    <option value="1">Меньше 50-ти</option>
+          	    <option value="2">50&mdash;100</option>
+          	    <option value="3">100&mdash;500</option>
+          	  </select>
+          	</div>
+          </div>
+          <div class="form-item">
+            <label class="placeholder" for="order_message">Ваши пожелания и комментарии</label>
+            <textarea name="order_message" id="order_message" rows="3" class="form-textarea" required ></textarea>
+          </div>
+          <div class="form-footer fc">
+            <input type="submit" class="form-submit button" value="Отправить заявку" />
+          </div>
+        </form>
+      </div>
+  	</div>
+  </div>
+</div>
+
+<!-- Popups END -->
+
+</body>
+
+</html>
