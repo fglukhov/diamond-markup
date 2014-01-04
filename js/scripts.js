@@ -51,6 +51,8 @@ $(window).scroll(function() {
 
 $(document).ready(function () {
 
+  
+
   $(".places-slider .pic-gallery-tmbs a").click(function() {
     $(this).parents(".slide").find(".pic-cont img").hide();
     $(this).parents(".slide").find(".pic-cont").html("<img src='"+$(this).attr("href")+"' style='display:none;' />");
@@ -89,19 +91,34 @@ $(document).ready(function () {
   });
 
   $(".place-specs").tooltip({
-      position: {
-        my: "center bottom-10",
-        at: "center top",
-        using: function( position, feedback ) {
-          $( this ).css( position );
-          $( "<div>" )
-            .addClass( "tooltip-arrow" )
-            .addClass( feedback.vertical )
-            .addClass( feedback.horizontal )
-            .appendTo( this );
-        }
+    position: {
+      my: "center bottom-10",
+      at: "center top",
+      using: function( position, feedback ) {
+        $( this ).css( position );
+        $( "<div>" )
+          .addClass( "tooltip-arrow" )
+          .addClass( feedback.vertical )
+          .addClass( feedback.horizontal )
+          .appendTo( this );
       }
-    });
+    }
+  });
+  
+  $(".ico-type").tooltip({
+    position: {
+      my: "center bottom-10",
+      at: "center top",
+      using: function( position, feedback ) {
+        $( this ).css( position );
+        $( "<div>" )
+          .addClass( "tooltip-arrow" )
+          .addClass( feedback.vertical )
+          .addClass( feedback.horizontal )
+          .appendTo( this );
+      }
+    }
+  });
 
   $(".anchors-menu a").click(function() {
     $(this).parents(".anchors-menu").find(".act").removeClass("act");
@@ -135,6 +152,16 @@ $(document).ready(function () {
   
   $(".main-achievements-carousel").jcarousel({
     scroll: 1,
+    wrap: 'circular'
+  });
+  
+  $(".awards-carousel").jcarousel({
+    scroll: 1,
+    wrap: 'circular'
+  });
+  
+  $(".menu-carousel .jcarousel").jcarousel({
+    scroll: 4,
     wrap: 'circular'
   });
 
@@ -175,6 +202,10 @@ $(document).ready(function () {
       label : 'Загрузить резюме'
     });
   }
+  
+  $(".case-slider").each(function() {
+    $(this).caseSlider();
+  });
   
 
   // Anchors nav
@@ -1078,6 +1109,60 @@ function openPopup(pupId) {
   };
 })( jQuery );
 
+(function( $ ) {
+
+  $.fn.caseSlider = function(options) {
+    var slider = $(this);
+    
+      slider.find(".slide").each(function() {
+        $(this).html("<div class='pic-wrapper'><div class='pic'>"+$(this).html()+"</div></div></div>")
+      });
+      
+      var items = $(this).children("div.slide");
+      
+      items.wrapAll("<div class='slides' />");
+      
+      var sliderSize = items.length;
+      
+      items.each(function() {
+        $(this).attr("index",$(this).index());
+      });
+      
+      items.hide();
+      items.eq(0).addClass("current").show();
+      
+      slider.append("<div class='gallery-carousel fc'><ul class='jcarousel'></ul></div>");
+      
+      var sliderCarousel = slider.find(".jcarousel");
+      
+      for (i=0;i<items.length;i++) {
+        if (!items.eq(i).find(".case-video").length) {
+          sliderCarousel.append("<li><div class='cont'><img src='" + items.eq(i).find("img").attr("src") + "' /></div></li>")
+        } else {
+          sliderCarousel.append("<li><div class='cont'><img src='" + items.eq(i).find(".tmb img").attr("src") + "' /></div><div class='ttl'>"+items.eq(i).find(".ttl").html()+"</div></li>")
+        }
+      }
+      
+      var carouselItems = sliderCarousel.find("li");
+      
+      carouselItems.first().addClass("act")
+      
+      sliderCarousel.jcarousel({
+        scroll:4,
+        initCallback:galleryInit
+      });
+      
+      sliderCarousel.find("li").click(function() {
+        if (!$(this).hasClass("act")) {
+          sliderCarousel.find("li").removeClass("act");
+          $(this).addClass("act")
+        }
+        slider.find(".current").fadeOut(250).removeClass("current");
+        slider.find(".slide").eq($(this).prevAll("li").length).fadeIn(250).addClass("current")
+      });
+      
+  };
+})( jQuery );
 
 
 (function( $ ) {
