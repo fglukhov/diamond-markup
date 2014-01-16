@@ -14,6 +14,15 @@ $(window).load(function() {
 });
 
 $(window).scroll(function() {
+
+  if ($(".fixed-menu").length) {
+    if ($(window).scrollTop() > $(".header").outerHeight() - 50) {
+      $(".fixed-menu").fadeIn(150)
+    } else {
+      $(".fixed-menu").fadeOut(150)
+    }
+  }
+
   if ($(".fixed-nav-placeholder").length) {
     if ($(".main-col-r").outerHeight(true) > $(".sidebar-l").outerHeight(true)) {
       if ($(window).scrollTop() > parseInt($(".fixed-nav-placeholder").offset().top - 40)) {

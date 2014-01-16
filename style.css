@@ -795,6 +795,56 @@ table tr td:first-child {
   text-decoration:none;
 }
 
+.fixed-menu {
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  background:#fff;
+  z-index:10;
+  box-shadow:0 0 15px 0 #999;
+  height:73px;
+  display:none;
+}
+
+.logo-fixed {
+  width:50px;
+  float:left;
+  margin:12px 44px 0 0;
+}
+
+.fixed-menu .main-menu-wrapper {
+  background:none;
+  height:73px;
+}
+
+.fixed-menu .main-menu li {
+  padding:3px 0 0 30px;
+  display:block;
+  float:left;
+  background-position:12px 8px;
+}
+
+.fixed-menu .main-menu li:first-child {
+  padding-left:0 !important;
+}
+
+.fixed-menu .main-menu {
+  font-size:12px;
+  border:none;
+  width:615px;
+  padding:24px 0 0 0;
+  float:left;
+}
+
+.fixed-menu .button {
+  float:right;
+  font-size:16px;
+  margin: 16px 0 0 0;
+  width: 237px;
+  text-align:center;
+}
+
 .body {
   padding:24px 0 74px 0;
 }
