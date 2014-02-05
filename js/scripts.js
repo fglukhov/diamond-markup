@@ -1,6 +1,16 @@
 ﻿$(window).resize(function() {
   $("body").css("width","");
   pupMakeup();
+  if ($(".main-slider").length) {
+    $(".main-slider .cases-button").css("margin-right",0)
+    var casesButtonOverflow = $(window).width() - $(".main-slider .cases-button").offset().left - $(".main-slider .cases-button").width()
+    if (casesButtonOverflow < 10) {
+      $(".main-slider .cases-button").css("margin-right",20 - casesButtonOverflow)
+      if ((20 - casesButtonOverflow) < 178) {
+        $(".main-slider .cases-button").css("margin-right",178)
+      }
+    }
+  }
 });
 
 $(window).load(function() {
@@ -493,6 +503,17 @@ $(document).ready(function () {
 
 function makeup() {
 
+  if ($(".main-slider").length) {
+    $(".main-slider .cases-button").css("margin-right",0)
+    var casesButtonOverflow = $(window).width() - $(".main-slider .cases-button").offset().left - $(".main-slider .cases-button").width()
+    if (casesButtonOverflow < 10) {
+      $(".main-slider .cases-button").css("margin-right",20 - casesButtonOverflow)
+      if ((20 - casesButtonOverflow) < 178) {
+        $(".main-slider .cases-button").css("margin-right",178)
+      }
+    }
+  }
+
   $("blockquote .cont").each(function() {
     $(this).find("p").first().html("<span class='quote quote-begin'>&laquo;</span>" + $(this).find("p").first().html())
     $(this).find("p").last().html($(this).find("p").first().html() + "<span class='quote quote-end'>&raquo;</span>")
@@ -776,6 +797,13 @@ function openPopup(pupId) {
     
     slider.find(".main-slider-carousel .jcarousel-item").click(function() {
       if (!$(this).hasClass("act")) {
+      
+        if (slider.find(".cases-button").css("display") == "block") {
+          slider.find(".cases-button").fadeOut(250);
+          nextBtn.show();
+          prevBtn.show();
+        }
+      
         slider.find(".slide-act").fadeOut(500).removeClass("slide-act");
         slider.find(".slide").eq($(this).index()).fadeIn(500).addClass("slide-act");
         slider.find(".main-slider-carousel .jcarousel-item").removeClass("act");
