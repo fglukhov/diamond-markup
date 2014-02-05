@@ -603,6 +603,11 @@ table tr td:first-child {
   text-align:center;
 }
 
+.footer-copy a,
+.footer-copy a:visited {
+  color:#fff;
+}
+
 .footer-top {
   padding:0 0 35px 0;
 }
