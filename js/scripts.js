@@ -39,11 +39,14 @@ $(window).scroll(function() {
           });
         } 
 
-        if ($(window).scrollTop() < $(".nav-abs").offset().top - 40) {
-          $(".fixed-nav-wrapper").removeClass("nav-abs").addClass("nav-fixed").css({
-            position: "fixed",
-            top: 40
-          });
+        if ($(".fixed-nav-wrapper").hasClass("nav-abs")) {
+          
+          if ($(window).scrollTop() < $(".nav-abs").offset().top - 40) {
+            $(".fixed-nav-wrapper").removeClass("nav-abs").addClass("nav-fixed").css({
+              position: "fixed",
+              top: 40
+            });
+          }
         }
       } else {
         $(".fixed-nav-wrapper").removeClass("nav-fixed").css({
@@ -1191,10 +1194,17 @@ function openPopup(pupId) {
   $.fn.simpleGallery = function(options) {
     var slider = $(this);
     
+      var srcArray = new Array();
+      
+      for (i=0;i<slider.find("img").length;i++) {
+        srcArray[i] = slider.find("img").eq(i).attr("src");
+      }
+      
+      
       slider.children().each(function() {
         $(this).wrap("<div class='slide'><div class='pic-wrapper'><div class='pic'></div></div></div>")
       });
-      var items = $(this).children("div.slide");
+      var items = $(this).find("div.slide");
       
       items.wrapAll("<div class='slides' />")
       
@@ -1205,14 +1215,16 @@ function openPopup(pupId) {
       });
       
       items.hide();
-      items.eq(0).addClass("current").show();
+      items.first().addClass("current").show();
       
       slider.append("<div class='gallery-carousel fc'><ul class='jcarousel'></ul></div>");
       
       var sliderCarousel = slider.find(".jcarousel");
       
+      
+      
       for (i=0;i<items.length;i++) {
-        sliderCarousel.append("<li><div class='cont'><img src='" + items.eq(i).find("img").attr("src") + "' /></div></li>")
+        sliderCarousel.append("<li><div class='cont'><img src='" + srcArray[i] + "' /></div></li>")
       }
       
       var carouselItems = sliderCarousel.find("li");

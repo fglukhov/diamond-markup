@@ -148,6 +148,7 @@ a,
 a:visited {
   color:#965cbe;
   text-decoration:underline;
+  outline:none;
 }
 
 a:hover {
@@ -274,7 +275,7 @@ blockquote .footer .pic {
 }
 
 blockquote .footer img {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   width:58px;
@@ -332,7 +333,7 @@ blockquote .footer .descr .cont {
 .simple-gallery .pic-wrapper {
   padding:8px;
   background:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-box-shadow:0 0 5px 0 #c09cd8;
   -moz-box-shadow:0 0 5px 0 #c09cd8;
   box-shadow:0 0 5px 0 #c09cd8;
@@ -997,7 +998,7 @@ table tr td:first-child {
 
 .common-form .form-text,
 .common-form .form-textarea {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   width:100%;
   -moz-box-sizing:border-box;
@@ -1073,7 +1074,7 @@ table tr td:first-child {
 .common-form label.error {
   margin: 0 -3px 0 35px;
   background-color: #f56f7c;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -1085,7 +1086,7 @@ table tr td:first-child {
 .common-form .errors-left label.error {
   margin:0 35px 0 -3px;
   background-color:#f56f7c;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px 0 0 3px;
   -moz-border-radius:3px 0 0 3px;
   border-radius:3px 0 0 3px;
@@ -1110,7 +1111,7 @@ table tr td:first-child {
 }
 
 .common-form .param-sel {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   border:2px solid #fff;
@@ -1156,7 +1157,7 @@ table tr td:first-child {
   z-index:10;
   /* min-width:258px; */
   width:100%;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
   border-radius:3px;
@@ -1217,7 +1218,7 @@ table tr td:first-child {
 }
 
 .ui-datepicker {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
   border-radius:3px;
@@ -1235,7 +1236,7 @@ table tr td:first-child {
 .ui-datepicker-header {
   background-color:#a86fd0;
   color:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px 3px 0 0;
   -moz-border-radius:3px 3px 0 0;
   border-radius:3px 3px 0 0;
@@ -1279,7 +1280,7 @@ table tr td:first-child {
 
 .ui-datepicker-calendar {
   border:1px solid #ece7ec;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px !important;
   -moz-border-radius:3px !important;
   border-radius:3px !important;
@@ -1306,7 +1307,7 @@ table tr td:first-child {
 .ui-datepicker-calendar a,
 .ui-datepicker-calendar a:visited {
   color:#625e5e;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
   border-radius:3px;
@@ -1654,7 +1655,7 @@ blockquote .name {
   position:absolute;
   padding:10px;
   background:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-box-shadow:0 0 5px 0 #c09cd8;
   -moz-box-shadow:0 0 5px 0 #c09cd8;
   box-shadow:0 0 5px 0 #c09cd8;
@@ -1839,7 +1840,7 @@ blockquote .name {
 }
 
 .membership-item .cont {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   margin:7px;
   height:393px;
@@ -1984,7 +1985,7 @@ blockquote .name {
 .menu-links img {
   width:135px;
   height:135px;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   -webkit-border-radius:67px;
   -moz-border-radius:67px;
@@ -2047,7 +2048,7 @@ blockquote .name {
 }
 
 .vacancy-descr .cont {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   margin:7px;
   -webkit-box-shadow:0 0 5px 0 #bbb;
@@ -2171,7 +2172,7 @@ blockquote .name {
 }
 
 .person img {
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   width:58px;
@@ -2338,7 +2339,7 @@ blockquote .name {
   display:inline-block;
   /* float:left; */
   text-align:center;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:2px;
   -moz-border-radius:2px;
   border-radius:2px;
@@ -2474,7 +2475,7 @@ blockquote .name {
 }
 
 .tabbed-content .tabs .act .cont {
-  behavior:url(PIE.htc);
+  /* behavior:url(/PIE.htc); */
   position:relative;
   background:#ad7bcf;
   -webkit-border-radius:2px;
@@ -2493,7 +2494,7 @@ blockquote .name {
 }
 
 .menu-tabs .tabs {
-  margin-bottom:-5px;
+  /* margin-bottom:-5px; */
 }
 
 .bq-extended-2 {
@@ -2606,7 +2607,7 @@ blockquote .name {
 .map-controls .mc-cont {
   background:#fff;
   padding:2px;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
   border-radius:6px;
@@ -3206,7 +3207,7 @@ blockquote .name {
 }
 
 .business-tabs .tab .cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   margin: 7px;
   padding:8px;
@@ -3368,7 +3369,7 @@ blockquote .name {
 }
 
 .business-tabs .tab-content .cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   margin: 7px;
   padding:8px;
@@ -3794,7 +3795,7 @@ blockquote .name {
   position:absolute;
   padding:10px;
   background:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-box-shadow:0 0 5px 0 #c09cd8;
   -moz-box-shadow:0 0 5px 0 #c09cd8;
   box-shadow:0 0 5px 0 #c09cd8;
@@ -3901,7 +3902,7 @@ blockquote .name {
 .places-slider .pic-gallery-tmbs img {
   width:60px;
   height:60px;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -4566,7 +4567,7 @@ blockquote .name {
 }
 
 .case-header .ch-pic .cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   width:226px;
   height:226px;
@@ -4652,7 +4653,7 @@ blockquote .name {
 .case-slider .pic-wrapper {
   padding:8px;
   background:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-box-shadow:0 0 5px 0 #c09cd8;
   -moz-box-shadow:0 0 5px 0 #c09cd8;
   box-shadow:0 0 5px 0 #c09cd8;
@@ -4780,7 +4781,7 @@ blockquote .name {
 .simple-gallery-2 .pic-wrapper {
   padding:8px;
   background:#fff;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   -webkit-box-shadow:0 0 5px 0 #c09cd8;
   -moz-box-shadow:0 0 5px 0 #c09cd8;
   box-shadow:0 0 5px 0 #c09cd8;
@@ -4936,7 +4937,7 @@ blockquote .name {
 }
 
 .place-map .cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   -webkit-box-shadow: 0 0 5px 0 #bbb;
   -moz-box-shadow: 0 0 5px 0 #bbb;
@@ -4971,7 +4972,7 @@ blockquote .name {
 }
 
 .cases-item-small .ci-pic .cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   -webkit-box-shadow: 0 0 5px 0 #bbb;
   -moz-box-shadow: 0 0 5px 0 #bbb;
@@ -5334,7 +5335,7 @@ blockquote .name {
 }
 
 .cases-slider-cont {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position: relative;
   margin: 7px;
   padding:8px;
@@ -6728,7 +6729,7 @@ h3 a:hover {
 .persons-list .pic img {
   width:82px;
   height:82px;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   -moz-border-radius:41px;
@@ -6854,7 +6855,7 @@ h3 a:hover {
 .contact-person .pic img {
   width:82px;
   height:82px;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   -moz-border-radius:41px;
@@ -7628,7 +7629,7 @@ ol.alternate-2 h3 {
 
 .clients-reviews .pic .cont {
   position:relative;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   width:78px;
   height:78px;
   border:2px solid #e4e4e4;
@@ -7931,7 +7932,7 @@ ol.alternate-2 h3 {
 .review-preview .pic img {
   width:82px;
   height:82px;
-  behavior:url(PIE.htc);
+  behavior:url(/PIE.htc);
   position:relative;
   display:block;
   -moz-border-radius:41px;
@@ -8835,4 +8836,8 @@ table.timeline h3 {
 }
 .contacts-r .order-form .form-textarea {
   height:139px;
+}
+
+.menu-tabs .tab-content {
+  clear:left;
 }
