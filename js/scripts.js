@@ -1,16 +1,8 @@
 ﻿$(window).resize(function() {
   $("body").css("width","");
   pupMakeup();
-  if ($(".main-slider").length) {
-    $(".main-slider .cases-button").css("margin-right",0)
-    var casesButtonOverflow = $(window).width() - $(".main-slider .cases-button").offset().left - $(".main-slider .cases-button").width()
-    if (casesButtonOverflow < 10) {
-      $(".main-slider .cases-button").css("margin-right",20 - casesButtonOverflow)
-      if ((20 - casesButtonOverflow) < 178) {
-        $(".main-slider .cases-button").css("margin-right",178)
-      }
-    }
-  }
+  mainSliderMakeup();
+  
 });
 
 $(window).load(function() {
@@ -70,7 +62,7 @@ $(window).scroll(function() {
 
 $(document).ready(function () {
 
-  
+  mainSliderMakeup();
 
   $(".places-slider .pic-gallery-tmbs a").click(function() {
     $(this).parents(".slide").find(".pic-cont img").hide();
@@ -108,6 +100,7 @@ $(document).ready(function () {
     $(this).parents(".tabbed-content").find(".tab").removeClass("act");
     
   });
+  
 
   $(".place-specs").tooltip({
     position: {
@@ -226,7 +219,8 @@ $(document).ready(function () {
     $(this).caseSlider();
   });
   
-
+  
+  
   // Anchors nav
 
   $(".anchors-nav a").click(function() {
@@ -503,17 +497,6 @@ $(document).ready(function () {
 
 function makeup() {
 
-  if ($(".main-slider").length) {
-    $(".main-slider .cases-button").css("margin-right",0)
-    var casesButtonOverflow = $(window).width() - $(".main-slider .cases-button").offset().left - $(".main-slider .cases-button").width()
-    if (casesButtonOverflow < 10) {
-      $(".main-slider .cases-button").css("margin-right",20 - casesButtonOverflow)
-      if ((20 - casesButtonOverflow) < 178) {
-        $(".main-slider .cases-button").css("margin-right",178)
-      }
-    }
-  }
-
   $("blockquote .cont").each(function() {
     $(this).find("p").first().html("<span class='quote quote-begin'>&laquo;</span>" + $(this).find("p").first().html())
     $(this).find("p").last().html($(this).find("p").first().html() + "<span class='quote quote-end'>&raquo;</span>")
@@ -547,12 +530,14 @@ function makeup() {
     
   });
   
-  $(".button").each(function() {
+  $("div.button,a.button").each(function() {
     $(this).html("<span class='btn-cont'><span class='b-l'><span class='b-r'>"+$(this).html()+"</span></span></span>");
   });
-
+  
   $("input:text, textarea").each(function() {
     $(this).addClass("initial");
+    
+    var th = $(this);
     
     if ($(this).prop("tagName") == "INPUT") {
       // if (!$(this).parents(".input-wrapper").length) $(this).wrap("<div class='input-wrapper'></div>");
@@ -581,7 +566,7 @@ function makeup() {
     }
       
     $(this).parents(".form-item").find(".placeholder").click(function() {
-      $(this).focus();
+      th.focus();
     });
     
   });
@@ -621,8 +606,6 @@ function makeup() {
     });
     
   }
-  
-  
   
 }
 
@@ -847,6 +830,7 @@ function openPopup(pupId) {
       nextBtn.show();
       prevBtn.show();
       slider.find(".main-slider-carousel li").eq(1).click();
+      mainSliderMakeup();
     });
     
   }
@@ -1407,3 +1391,35 @@ jQuery.extend(jQuery.validator.messages, {
     max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
     min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
 });
+
+function mainSliderMakeup() {
+  if ($(".main-slider").length) {
+    $(".main-slider .cases-button").css("margin-right",0)
+    var casesButtonOverflow = $(window).width() - $(".main-slider .cases-button").offset().left - $(".main-slider .cases-button").width()
+    if (casesButtonOverflow < 10) {
+      $(".main-slider .cases-button").css("margin-right",20 - casesButtonOverflow)
+      if ((20 - casesButtonOverflow) > 178) {
+        $(".main-slider .cases-button").css("margin-right",178)
+      }
+    }
+    
+    $(".main-slider .slider-next").css("margin-right",0)
+    var casesNextOverflow = $(window).width() - $(".main-slider .slider-next").offset().left - $(".main-slider .slider-next").width()
+    if (casesNextOverflow < 10) {
+      $(".main-slider .slider-next").css("margin-right",10 - casesNextOverflow)
+      if ((10 - casesNextOverflow) > 60) {
+        $(".main-slider .slider-next").css("margin-right",60)
+      }
+    }
+    
+    $(".main-slider .slider-prev").css("margin-left",0)
+    var casesPrevOverflow = $(".main-slider .slider-prev").offset().left;
+    if (casesPrevOverflow < 10) {
+      $(".main-slider .slider-prev").css("margin-left",10 - casesPrevOverflow)
+      if ((10 - casesPrevOverflow) > 60) {
+        $(".main-slider .slider-prev").css("margin-left",60)
+      }
+    }
+    
+  }
+}

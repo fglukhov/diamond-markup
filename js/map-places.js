@@ -19,7 +19,7 @@ function init () {
     }, {
         // Опции.
         // Своё изображение иконки метки.
-        iconImageHref: 'images/place-pin-recommended.png',
+        iconImageHref: 'images/place-pin-recommendedz.png',
         // Размеры метки.
         iconImageSize: [42, 48],
         // Смещение левого верхнего угла иконки относительно

@@ -998,6 +998,7 @@ table tr td:first-child {
 .common-form .form-text,
 .common-form .form-textarea {
   behavior:url(PIE.htc);
+  position:relative;
   width:100%;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -1027,6 +1028,7 @@ table tr td:first-child {
 
 .common-form .placeholder {
   position:absolute;
+  z-index:2;
   left:0;
   top:1px;
   height:40px;
@@ -1093,7 +1095,7 @@ table tr td:first-child {
 }
 
 .common-form .form-phone {
-  font-size:20px;
+  font-size:18px;
 }
 
 .common-form .param-sel-error .param-sel,
@@ -2408,6 +2410,9 @@ blockquote .name {
   padding:17px 60px;
 }
 
+.order-short-form .form-textarea {
+  height:71px;
+}
 .order-short-form .fi-2-3 {
   width:430px;
 }
@@ -8827,4 +8832,7 @@ table.timeline h3 {
 
 .breadcrumbs-alternate {
   padding-left:0;
+}
+.contacts-r .order-form .form-textarea {
+  height:139px;
 }
