@@ -3114,6 +3114,10 @@ blockquote .name {
   margin: 0 -16px 0 0;
 }
 
+.subscribe-form .error-wrapper {
+  top:-2px;
+}
+
 .subscribe-form .form-item {
   width:241px;
 }
@@ -3298,7 +3302,6 @@ blockquote .name {
   cursor:pointer;
   color:#8f50b9;
   font-family:'pt_sansitalic';
-  font-style:italic;
   font-size:16px;
   text-transform:none !important;
 }
@@ -3953,7 +3956,7 @@ blockquote .name {
   overflow:hidden;
   line-height:normal;
   color:#625e5e;
-  padding:0 0 0 10px;
+  padding:0 12px 0 10px;
 }
 
 .places-carousel .jcarousel-item .pic-mask {
@@ -4192,8 +4195,8 @@ blockquote .name {
 }
 
 .main-clients .txt {
-  margin:0 0 14px 0;
-  height:48px;
+  margin:0 0 12px 0;
+  height:50px;
   overflow:hidden;
 }
 

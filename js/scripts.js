@@ -86,8 +86,7 @@ $(document).ready(function () {
   
   if ($(".main-clients-carousel").length) {
     $(".main-clients-carousel").jcarousel({
-      scroll:4,
-      wrap: 'circular'
+      scroll:4
     });
   }
   
@@ -659,6 +658,16 @@ function validateForms() {
         }
       });
     }
+    
+    $(document).mouseup(function (e) {
+      var container = $("form");
+
+      if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          $(".error-wrapper").remove();
+      }
+    });
     
     
   });  
