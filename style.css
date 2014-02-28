@@ -490,6 +490,10 @@ table tr td:first-child {
   background-image:none;
 }
 
+.header-top {
+  padding-bottom:20px;
+}
+
 .header-l,
 .footer-l {
   float:left;
