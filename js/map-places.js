@@ -15,7 +15,7 @@ function init () {
     
     myMap.controls.add(
        new ymaps.control.ZoomControl(),
-       { left: 110, top: 20 }
+       { right: 110, top: 20 }
     );
     
     myPlacemark1 = new ymaps.Placemark([55.76, 37.64], {
