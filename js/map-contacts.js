@@ -13,6 +13,11 @@ function init () {
         zoom:13
     });
     
+    myMap.controls.add(
+       new ymaps.control.ZoomControl(),
+       { left: 110, top: 20 }
+    );
+    
     myPlacemark2 = new ymaps.Placemark([55.76, 37.64], {
         // Свойства.
         hintContent: ''
