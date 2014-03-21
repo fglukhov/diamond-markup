@@ -175,8 +175,7 @@ $(document).ready(function () {
   });
   
   $(".menu-carousel .jcarousel").jcarousel({
-    scroll: 4,
-    wrap: 'circular'
+    scroll: 4
   });
 
   if ($(".form-date").length) {
@@ -1332,7 +1331,7 @@ function sliderCarouselInit(carousel,state) {
 
 (function( $ ) {
 
-  $.fn.commonSlider = function(options) {
+  $.fn.commonSlider = function() {
       var slider = $(this);
     
       var items = $(this).find("div.slide");
@@ -1364,9 +1363,6 @@ function sliderCarouselInit(carousel,state) {
           items.eq(0).fadeIn(250).addClass("current");
           slider.css("height",items.eq(0).height());
         }
-        imgMarginTop = -items.eq(curIndex).find("img").height()/2+options.height/2;
-        if (imgMarginTop > 0) imgMarginTop = 0;
-        items.eq(curIndex).find("img").css("margin-top",imgMarginTop);
       });
       
       prevBtn.click(function() {
@@ -1381,9 +1377,6 @@ function sliderCarouselInit(carousel,state) {
           items.eq(sliderSize-1).fadeIn(250).addClass("current");
           slider.css("height",items.eq(sliderSize-1).height());
         }
-        imgMarginTop = -items.eq(curIndex).find("img").height()/2+options.height/2;
-        if (imgMarginTop > 0) imgMarginTop = 0;
-        items.eq(curIndex).find("img").css("margin-top",imgMarginTop);
       });
       
   };
@@ -1442,5 +1435,28 @@ function mainSliderMakeup() {
       }
     }
     
+  }
+}
+
+function elementLoader(element,loaderBg) {
+  var el = element;
+  if (!$(".element-loader[rel='"+elementId+"']").length) {
+    $("body").append("<div class='element-loader' rel='"+elementId+"'></div>");
+    var loader = $(".element-loader[rel='"+elementId+"']");
+    loader.css({
+      "left":el.offset().left,
+      "top":el.offset().top,
+      "width":el.width(),
+      "height":el.height()
+    }).append("<div class='loader-bg' />").append("<div class='loader-pic' />");
+    loader.find(".loader-bg").css("background-color",loaderBg)
+  }
+}
+
+function removeLoader(element,loaderBg) {
+  var el = element;
+  if (!$(".element-loader[rel='"+elementId+"']").length) {
+    var loader = $(".element-loader[rel='"+elementId+"']");
+    loader.remove();
   }
 }
