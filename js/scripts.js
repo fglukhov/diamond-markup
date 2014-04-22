@@ -827,13 +827,19 @@ function openPopup(pupId) {
     if (!slider.find(".main-slider-carousel .act").next().length) {
       nextBtn.addClass("slider-next-disabled");
     }
-    
+		
     prevBtn.on("click",function() {
       $(".main-slider-carousel .act").prev().click();
+			$(".main-slider-carousel .jcarousel").jcarousel("scroll", $(".main-slider-carousel .act").prevAll().length);
     });
     
     nextBtn.on("click",function() {
       $(".main-slider-carousel .act").next().click();
+			if (!$(".main-slider-carousel .act").next().length) {
+				$(".main-slider-carousel .jcarousel-next").click();
+			} else {
+				$(".main-slider-carousel .jcarousel").jcarousel("scroll", $(".main-slider-carousel .act").prevAll().length);
+			}
     });
     
     slider.find(".cases-button").click(function() {
