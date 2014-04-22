@@ -490,6 +490,22 @@ table tr td:first-child {
   background-image:none;
 }
 
+.contacts-l table {
+	border:none;
+} 
+
+/* .contacts-l table tr:first-child td {
+	border-top:none;
+}
+
+.contacts-l table tr:last-child td {
+	border-bottom:none;
+} */
+
+.contacts-l table td.name {
+  width:100px;
+}
+
 .header-top {
   padding-bottom:20px;
 }
@@ -775,11 +791,12 @@ table tr td:first-child {
 }
 
 .main-menu li {
+  text-align:right;
   display: table-cell;
   vertical-align: middle;
   margin: 0;
-  padding: 3px 0 0 70px;
-  background: url(images/main-menu-bullet.png) 28px 22px no-repeat;
+  padding: 3px 0 0 102px;
+  background: url(images/main-menu-bullet.png) 59px 22px no-repeat;
 }
 
 .main-menu li:first-child {
@@ -788,7 +805,8 @@ table tr td:first-child {
 }
 
 .main-menu li:last-child {
-  text-align:right;
+  /* text-align:right; */
+
   padding-right:0;
 }
 
@@ -1547,6 +1565,13 @@ table tr td:first-child {
   padding:0;
 }
 
+.result-popup {
+  width:592px;
+  height:200px;
+  background:url(images/order-popup-bg.png) 0 0 no-repeat;
+  padding:0;
+}
+
 .order-popup .ttl,
 .order-form .ttl {
   font-size:21px;
@@ -1567,7 +1592,7 @@ table tr td:first-child {
 
 .article-video {
   position:relative;
-  padding:0 0 40px 0;
+  padding:0 0 35px 0;
   background:url(images/video-shadow.png) center bottom no-repeat;
   margin:26px 0 -30px 0;
 }
@@ -2225,8 +2250,20 @@ blockquote .name {
 }
 
 .cases-item h3 {
-  margin:0 0 14px 0;
+  margin:0 0 10px 0;
   line-height:22px;
+  font-size:18px;
+}
+
+.case_date_list {
+	color: #b0acb0;
+	font-size: 12px;
+}
+
+.case_date_detail {
+	color: #1f1f1d;
+	font-size: 13px;
+	color:#8f50b9;
 }
 
 .cases-item h3 a {
@@ -2240,7 +2277,7 @@ blockquote .name {
 .cases-item .text {
   font-size:14px;
   line-height:16px;
-  margin:0 0 19px 0;
+  margin:0 0 15px 0;
 }
 
 .cases-item:last-child {
@@ -2430,6 +2467,10 @@ blockquote .name {
   margin-bottom:15px;
 }
 
+.cases-item h3.h3_case_list {
+	margin-bottom:2px;
+}
+
 .order-short-form .button {
   margin: 0 auto;
   width: 216px;
@@ -2438,7 +2479,7 @@ blockquote .name {
 .business-tasks h2 {
   font-size:26px;
   line-height:28px;
-  margin:21px 0 6px 0;
+  margin:32px 0 10px 0;
 }
 
 .business-tasks h2:first-of-type {
@@ -3438,8 +3479,9 @@ blockquote .name {
 }
 
 .cases-slider h3 {
-  font-size:24px;
-  line-height:26px;
+  font-size:22px;
+
+  line-height:25px;
   margin:0 0 7px 0;
 }
 
@@ -3839,7 +3881,7 @@ blockquote .name {
 .places-slider h2 {
   margin: 15px 0 15px 0;
   text-transform: none;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 28px;
 }
 
@@ -5256,6 +5298,7 @@ blockquote .name {
 .event-steps {
   margin: -9px -35px -3px 0;
   padding: 0 0 0px 0;
+  overflow:hidden;
 }
 
 .event-steps-item {
@@ -5264,6 +5307,10 @@ blockquote .name {
   padding: 0 35px 0 0;
   font-size: 14px;
   line-height: 18px;
+}
+
+.event-steps-item.span4 {
+  width: 165px;
 }
 
 .event-steps .num {
@@ -5283,6 +5330,22 @@ blockquote .name {
   margin:57px -11px -94px 0;
   background:url(images/we-do-what-bg.png) 0 0 no-repeat;
   z-index:1;
+}
+
+.we-do-what.pic1{
+	background:url(images/we-do-what-bg1.png) 0 0 no-repeat;
+}
+.we-do-what.pic2{
+	background:url(images/we-do-what-bg2.png) 0 0 no-repeat;
+}
+.we-do-what.pic3{
+	background:url(images/we-do-what-bg3.png) 0 0 no-repeat;
+}
+.we-do-what.pic4{
+	background:url(images/we-do-what-bg4.png) 0 0 no-repeat;
+}
+.we-do-what.pic5{
+	background:url(images/we-do-what-bg5.png) 0 0 no-repeat;
 }
 
 .we-do-what h3 {
@@ -5357,12 +5420,13 @@ blockquote .name {
 }
 
 .cases-slider-2 .logo {
-  height:79px;
+  height:65px;
 }
 
 .cases-slider-2 h3 {
-  font-size:22px;
-  line-height:26px;
+  font-size:20px;
+
+  line-height:25px;
   margin-bottom:11px;
 }
 
@@ -5454,21 +5518,37 @@ h2 + .places-list {
 }
 
 .how-we-do-item {
-  width: 162px;
-  float: left;
-  margin: 0 40px 0 0;
-  font-size: 14px;
-  line-height: 18px;
+
+
+  margin: 0 40px 20px 0;
+	font-size: 14px;
+	line-height: 18px;
+	clear: left;
 }
 
 .how-we-do-item .pic {
-  margin:0 0 17px 0;
+  margin: 0 15px 17px 0;
+	float: left;
+	width: 80px;
+	overflow: hidden;
+	text-align:center;
+}
+
+.how-we-do-item .pic img {
+	width:auto !important;
+	height:auto !important;
+	max-width:55px;
+}
+
+.how-we-do-item .descr {
+	overflow: hidden;
+	padding: 6px 0 0 0;
 }
 
 .how-we-do-item h3 {
   font-size: 18px;
   line-height: 18px;
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .chef-awards {
@@ -5554,7 +5634,7 @@ h2 + .places-list {
   border:none;
   background:none;
   padding:0 18px 8px 0;
-  vertical-align:top;
+  vertical-align:bottom;
 }
 
 .contacts-table .name {
@@ -8879,4 +8959,10 @@ table.timeline h3 {
   left:50%;
   top:100px;
   margin:0 0 0 -33px;
+}
+
+.col-half {
+  width:45%;
+	margin:0 5% 0 0;
+	float:left;
 }
