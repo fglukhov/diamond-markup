@@ -1267,7 +1267,7 @@ function galleryInit(carousel,state) {
 }
 
 function sliderCarouselInit(carousel,state) {
-  carousel.list.find(".jcarousel-item").css("width","auto");
+  // carousel.list.find(".jcarousel-item").css("width","auto");
 }
 
 (function( $ ) {

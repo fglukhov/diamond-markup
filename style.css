@@ -4307,6 +4307,7 @@ blockquote .name {
   background-position:0 0;
   overflow:hidden;
   cursor:pointer;
+	background-color:#FFF;
 }
 
 .main-slider-carousel .jcarousel-prev:hover {
@@ -4328,6 +4329,8 @@ blockquote .name {
   background-position:-62px 0;
   overflow:hidden;
   cursor:pointer;
+	border-left:10px solid #fff;
+	background-color:#FFF;
 }
 
 .main-slider-carousel .jcarousel-next:hover {
@@ -4342,8 +4345,9 @@ blockquote .name {
   background:url(images/main-slider-bullet.png) right 30px no-repeat;
   height:58px;
   margin:0;
-  padding:10px 36px 0 17px;
-  width:400px;
+  padding:10px 36px 0 0;
+	margin:0 17px 0 0;
+  width:258px;
   cursor:pointer;
 }
 
@@ -4362,7 +4366,7 @@ blockquote .name {
 
 .main-slider-carousel .jcarousel-item:last-child {
   background:none;
-  padding-right:0;
+  /* padding-right:0; */
 }
 
 .main-slider-carousel .item-cont {
@@ -4384,7 +4388,11 @@ blockquote .name {
 }
 
 .main-slider-carousel .video-link {
-  padding-left:0;
+  /* padding-left:0; */
+}
+
+.main-slider-carousel .video-link .item-cont {
+  margin-right:-20px;
 }
 
 .main-slider-carousel .video-link .pic {
@@ -4393,7 +4401,7 @@ blockquote .name {
 
 .main-slider-carousel .video-link .descr {
   text-transform:uppercase;
-  font-size:16px;
+  font-size:14px;
 }
 
 .main-slider-carousel .ico-video {
@@ -8962,7 +8970,7 @@ table.timeline h3 {
 }
 
 .col-half {
-  width:45%;
+  width:290px;
 	margin:0 5% 0 0;
 	float:left;
 }
